@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const PORT =3001
 const app = express();
 const path = require("path");
 const bodyParser= require("body-parser")
@@ -146,6 +147,6 @@ app.post("/rr-locality",(req,res)=>{
 //   property_data.save();
 //   res.send("suc..");
 // });
-app.listen(process.env.PORT, () => {
-  console.log(`Server is run on ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is run on ${PORT}`);
 });
